@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping</title>
+    <style>
+        ul>li{
+            list-style: none;
+            float:left;
+            width: 100px;
+            padding: 1em;
+            height: 30px;
+            text-align: center;
+        }
+    
+        li:nth-child(2n-1){
+            background-color: orange;
+        }
+        li:nth-child(2n){
+            background-color: pink;
+        }
+        li:first-child{
+            border-radius: 20px 0px 0px 20px;
+        }
+        li:last-child{
+            border-radius: 0px 20px 20px 0px;
+        }
+        #div1{
+            width: 800px;
+            height: 100px;
+            background-color: lime;
+        }
+        
+        p{
+            float: right;
+            width: 200px;
+            height: 100px;
+            color: yellow;
+            background-color: black;
+            border-radius: 100px 0px;
+        }
+        #div2{
+            margin-top: 2em;
+            text-align: center;
+            color: blue;
+            width: 800px;
+            background-image: url('img/singsing.png');
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* height: 100px; */
+        }
+        .num1{
+            background-color: pink;
+            padding: 2px;
+            width: 100px;
+            height: 40px;
+        }
+        .num2{
+            width: 250px;
+            height: 40px;
+            background-color: white;
+        }
+        img{
+            width: 100px;
+        }
+        #tb{
+            margin: 0 auto;
+        }
+        #fun{
+            color: red;
+        }
+        a:link{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <ul>
+            <li><a href="shopjoin.html">회원가입</li>
+            <li><a href="#">제품정보</a></li>
+            <li><a href="#">게시판</a></li>
+            <li><a href="#">장바구니</a></li>
+        </ul>
+        <p>장바구니 들어가는 부분</p>
+    </div>
+    <div id="div2">
+        <table id="tb">
+            <tr>
+                <td class="num1">제품번호</td>
+                <td class="num2">100</td>
+            </tr>
+            <tr>
+                <td class="num1">제품이름</td>
+                <td class="num2" id="fun">shoes1</td>
+            </tr>
+            <tr>
+                <td class="num1">제품설명</td>
+                <td class="num2">fun shoes1</td>
+            </tr>
+            <tr>
+                <td class="num1">제품가격</td>
+                <td class="num2">1000</td>
+            </tr>
+            <tr>
+                <td class="num1">제조회사</td>
+                <td class="num2">c100</td>
+            </tr>
+            <tr>
+                <td class="num1">제품이미지</td>
+                <td class="num2"><img src="img/ham.gif"></td>
+            </tr>
+        </table>
+        <img src="img/sea.jpg">
+    </div>
+</body>
+</html>

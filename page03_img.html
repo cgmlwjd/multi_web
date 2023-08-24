@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>이미지</title>
+    </head>
+    <body>
+        <h1>이미지 태그</h1>
+        <!-- %로 적으면 웹브라우저 다 차지하는 이미지 
+        상대적인거라 줄이면 줄어든다. px하면 px 크기만큼만 나온다-->
+        <!-- inline 요소 -->
+        <!-- 상대경로, 실행 중인 html 파일이 있는 경로를 기준으로 파일을 찾는 방식 -->
+        <!-- . : 현재 디렉토리
+        .. : 디렉토리 한 단계 위(상위 디렉토리)
+        ../../파일명 : 두 단계 상위 디렉토리에서 파일을 찾는다 -->
+        <img src="img/bird.png" alt="새" width="300" height="300">
+        <img src="img/building.png" alt="건물" width="300" height="500">
+        <img src="img/cup.png" alt="컵" width="300" height="300">
+
+        <hr color="red">
+
+        <!-- /는 서버의 루트 -->
+        <img src="/img/sea.png">
+        <!-- 절대경로 : 서버의 루트 디렉토리를 기준으로 파일을 찾는 방식 -->
+        <img src="http://localhost:5500/img/sea.png">
+        
+        <hr color="blue">
+
+        <figure>
+            <img src="https://ssl.pstatic.net/melona/libs/1461/1461313/cf7b8c7aa5857c8909f8_20230818134121893.jpg" width="400">
+            <figcaption>배너광고</figcaption>
+        </figure>
+
+    </body>
+</html>

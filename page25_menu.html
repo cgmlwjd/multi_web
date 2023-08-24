@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul>li{
+            margin-bottom: 1em;
+        }
+        ul>li{
+            list-style: none;
+            background-color: lavenderblush;
+            width: 100px;
+            padding: 1em;
+            height: 30px;
+            float: left;
+            /* border:1px solid red; */
+            /* 상하좌우 모두 50px */
+            border-radius: 50px;
+            text-align: center;
+            /* float을 해제하고자 할 때는 clear:left, clear:right, clear:both */
+        }
+        a:link{
+            text-decoration: none;
+        }
+        hr{
+            /* left, right 어디로 갈 지 모르니 both로 */
+            clear: both;
+        }
+        /* li:first-child{
+            background-color: yellow;
+        }
+        li:last-child{
+            background-color: orange;
+        } */
+        /* 홀수 번째 */
+        li:nth-child(2n-1){
+            background-color: yellow;
+        }
+        /* 짝수 번째 */
+        li:nth-child(2n){
+            background-color: orange;
+        }
+        div{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            color: white;
+            /* border-radius: 10px 30px 60px 90px; 시계방향으로 모서리 */
+            /* border-radius: 50px 10px; */
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="page01.html">회원가입</a></li>
+        <li><a href="page02_text.html">제품정보</a></li>
+        <li><a href="page10_input.html">게시판</a></li>
+        <li><a href="page04_link.html">장바구니</a></li>
+    </ul>
+    <hr color="red" size="5">
+    <div>
+        div
+    </div>
+</body>
+</html>

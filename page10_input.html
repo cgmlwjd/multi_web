@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>입력 양식 - input 태그</h1>
+    <p>
+        form 태그는 사용자가 입력한 값들을 웹서버에 전달하고자 할 때 사용한다
+        <br>
+        form 태그 안에는 다양한 입력양식(input, select, textarea...)이 올 수 있다.
+    </p>
+    <hr color="red">
+    <!-- method : get(defauly, 다 노출이 됨), post, put, delete -->
+    <form action="go.jsp" method="get">
+        아이디: <input type="text" name="userid"><br>
+        비밀번호: <input type="password" name="userpw"> <br>
+            <input type="submit" value="submit">
+    </form>
+    <input type="text" name="hobby">
+</body>
+</html>
